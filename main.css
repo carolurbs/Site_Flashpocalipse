@@ -11,9 +11,9 @@ body
 }
 header, #sobre, #contato, footer
 {
-    background-color: #3e3e3e;
+
     margin:15px;
-    border-bottom: 2px solid #1E0000;
+    border: 2px solid  #272727;
     border-radius: 20px;
     box-shadow: 0 2px 2px #1E0000;
 }
@@ -29,7 +29,7 @@ header h1{
     font-size: 32px;
     font-weight: 800;
     font-style: italic;
-    color: #590101;
+    color: #272727;
     padding: 15px;;
 }
 header  ul
@@ -49,18 +49,18 @@ header a
 {
     font-family:"Sansita", sans-serif;
     font-size: 24px;
-    color: #590101;
+    color:#272727;
     font-weight: 800;
     text-decoration: none;
-    border: 2px solid #590101;
+    border: 2px solid #272727;
     border-radius: 40px;
     padding: 5px;    
 }
 header a:hover
 {
-    background-color: #590101;
-    color: #3e3e3e;
-    border: #590101;
+    background-color: #272727;
+    color: #400505;
+    border: #272727;
 }
 
 #sobre div
@@ -79,14 +79,14 @@ header a:hover
 {
     font-family:"Sansita", sans-serif;
     font-size: 24px;
-    color: #590101;
+    color: #3e3e3e;
     margin: 50px 200px 15px;
     font-weight: 800;
 }
 #sobre p{
     font-size: 20px;
     max-width: 50ch;
-    color: #590101;
+    color: #3e3e3e;
     font-family: "DM Sans", sans-serif;
     margin: 5px 200px;
 }
@@ -120,7 +120,7 @@ justify-content: space-between;
     font-size: 24px;
     font-weight: 800;
     margin-bottom: 5px;
-    color: #590101;
+    color: #3e3e3e;
     display: flex;
     justify-content: center;
 }
@@ -133,27 +133,27 @@ justify-content: center;
 #contato form label
 {
    font-family: "Sansita", sans-serif;
-    color: #590101;
+    color: #3e3e3e;
     font-weight: 600;
 }
 form input
 {
-    border: 2px solid #590101;
+    border: 2px solid #3e3e3e;
     background-color: transparent;
     font-family: "DM Sans", sans-serif ;
     font-size: 12px;
-    color: #590101;
+    color: #3e3e3e;
     padding: 5px;
     border-radius: 20px;
     
 }
 form textarea
 {
-    border: 2px solid #590101;
+    border: 2px solid #3e3e3e;
     background-color: transparent;
     font-family: "DM Sans", sans-serif ;
     font-size: 12px;
-    color: #590101;
+    color: #3e3e3e;
     padding: 5px;
     margin-top: 5px;
     border-radius: 20px;
@@ -164,19 +164,19 @@ form textarea
 {
     font-family: "DM Sans", sans-serif ;
     font-size: 12px;
-    color: #590101;
+    color: #3e3e3e;
 }
 
 input:focus ,textarea:focus
 {
-    outline: 2px solid #400505;
+    outline: 2px solid #272727;
 }
 
 form button
 {
-    color: #590101;
+    color: #272727;
     background-color: transparent;
-    border: 2px solid #590101;
+    border: 2px solid #272727;
     font-family: "Sansita", sans-serif;
     font-weight: 800;
     font-size: 20px;
@@ -187,14 +187,14 @@ form button
 }
 form button:hover
 {
-    color: #3e3e3e;
+    color:#400505;
     border: 2px solid transparent;
-    background-color: #590101;
+    background-color: #272727;
 }
 footer p
 {
     font-family: "Sansita", sans-serif;
-    color: #590101;
+    color: #3e3e3e;
     font-size: 20px;
     font-weight: 600;
     margin: 10px;
