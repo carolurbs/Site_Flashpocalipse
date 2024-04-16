@@ -1,203 +1,48 @@
-*
-{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    
-}
 body
 {
-    background-color: #2e0000;
+    color: #fff;
+    background-color: #461616;
+    font-family: "DM Sans", sans-serif;
 }
-header, #sobre, #contato, footer
+h1,h2,h3, .nav-link
 {
-background-color: #141414;
-    margin:15px;
-    border: 2px solid  #272727;
-    border-radius: 20px;
-    box-shadow: 0 2px 2px #1E0000;
-}
-header div
-{
-display: flex;
-flex-direction: row;
-justify-content: space-between;
-align-items: center;
-}
-header h1{
     font-family: "Sansita", sans-serif;
-    font-size: 32px;
+    font-size: 1.5em;
     font-weight: 800;
     font-style: italic;
-    color: #5f5f5f;
-    padding: 15px;;
-}
-header  ul
-{
-    display: flex;
-    flex-direction: row;
-    list-style: none;
-    
-}
-header li
-{
-margin-right: 15px;
-
-}
-
-header a
-{
-    font-family:"Sansita", sans-serif;
-    font-size: 24px;
-    color:#3e3e3e;
-    font-weight: 800;
-    text-decoration: none;
-    border: 2px solid #272727;
-    border-radius: 40px;
-    padding: 5px;    
-}
-header a:hover
-{
-    background-color: #272727;
-    color: #400505;
-    border: #272727;
-}
-
-#sobre div
-{
-    display: flex;
-    flex-direction: row;
-
-    padding: 20px;
-    justify-content: center;
-}
-#sobre img
-{
-    height: 415px;
-}
-#sobre h2
-{
-    font-family:"Sansita", sans-serif;
-    font-size: 24px;
-    color: #5f5f5f;
-    margin: 50px 200px 15px;
-    font-weight: 800;
-}
-#sobre p{
-    font-size: 20px;
-    max-width: 50ch;
-    color: #5f5f5f;
-    font-family: "DM Sans", sans-serif;
-    margin: 5px 200px;
-}
-#contato 
-{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-justify-content: space-between;
-}
-
-#contato div
-{
-    margin: 20px 350px 20px ;
-}
-
-#contato ul
-{
-    display: flex;
-    flex-direction: row;
-    list-style: none;
-}
-#contato img
-{
-    height: 40px;
     margin: 10px;
 }
-#contato h2
+
+.nav .nav-link,
+.navbar-brand, 
+.navbar-brand:hover
 {
-    font-family:"Sansita", sans-serif;
-    font-size: 24px;
-    font-weight: 800;
-    margin-bottom: 5px;
-    color: #5f5f5f;
-    display: flex;
-    justify-content: center;
+    color: #fff;
+    text-align: center;
+    margin-top: 10px;
 }
-form
+.navbar-toggler
 {
-display: flex;
-flex-direction: column;
-justify-content: center;
+    background-color:#757373
 }
-#contato form label
+nav .nav-link:hover
 {
-   font-family: "Sansita", sans-serif;
-    color: #5f5f5f;
-    font-weight: 600;
+    background-color: #7d7979;
 }
-form input
+
+.navbar, section
 {
-    border: 2px solid #3e3e3e;
-    background-color: transparent;
-    font-family: "DM Sans", sans-serif ;
-    font-size: 12px;
-    color: #3e3e3e;
-    padding: 5px;
-    border-radius: 20px;
     
+    background-color: #2d2d2d;
 }
-form textarea
-{
-    border: 2px solid #3e3e3e;
-    background-color: transparent;
-    font-family: "DM Sans", sans-serif ;
-    font-size: 12px;
-    color: #5f5f5f;
-    padding: 5px;
-    margin-top: 5px;
-    border-radius: 20px;
-    resize: none;
-    height: 100px;
+section
+{ 
+    height: 100vh;
+    margin: 20px 0;
+    padding-top: 120px;
 }
-::placeholder
+.nav .nav-link.active
 {
-    font-family: "DM Sans", sans-serif ;
-    font-size: 12px;
-    color: #5f5f5f;
-}
-
-input:focus ,textarea:focus
-{
-    outline: 2px solid #272727;
-}
-
-form button
-{
-    color: #5f5f5f;
-    background-color: transparent;
-    border: 2px solid #272727;
-    font-family: "Sansita", sans-serif;
-    font-weight: 800;
-    font-size: 20px;
-    font-weight: 800px;
-    padding: 5px 30px 5px 5px;
-    margin: 10px 0;
-    border-radius: 15px 15px 40px;
-    cursor: pointer;
-}
-form button:hover
-{
-    color:#400505;
-    border: 2px solid transparent;
-    background-color: #272727;
-}
-footer p
-{
-    font-family: "Sansita", sans-serif;
-    color: #5f5f5f;
-    font-size: 20px;
-    font-weight: 600;
-    margin: 10px;
-    padding: 20px;
+    background-color: #461616;
+    color: #fff;
 }

@@ -7,68 +7,84 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Sansita:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./main.css">
+<link rel="stylesheet" href="./lib/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+<link rel="stylesheet" href="./main.css">
+
+
 </head>
 <body>
-    <header>
-        <div>
-            <h1> Flashpocalipse RPG</h1>
-            <nav>
-                <ul>
-                    <li><a href="#sobre">Sobre</a></li>
-                    <li><a href="#contato">Contato</a></li>
+    <header class="navbar navbar-expand-lg sticky-top p-4" id="header">
+        <div class="container">
+            <h1 class="navbar-brand m-0 fw-bold"> Flashpocalipse RPG</h1>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-navegacao">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav class="navbar-collapse collapse justify-content-end" id="menu-navegacao">
+                <ul class="nav nav-pills d-block d-md-flex">
+                    <li class="nav-itens"><a class="nav-link active fw-bold " href="#sobre"><i class="bi bi-house-door me-1"></i>Sobre</a></li>
+                    <li class="nav-itens"><a class="nav-link fw-bold " href="#wiki"><i class="bi bi-book me-1"></i>Wiki</a></li>
+                    <li class="nav-itens"><a class="nav-link fw-bold " href="#equipe"><i class="bi bi-person me-1"></i>Equipe</a></li>
+                    <li class="nav-itens"><a class="nav-link fw-bold" href="#contato"> <i class="bi bi-chat-square me-1"></i>Contato</a></li>
                 </ul>
             </nav>
         </div>
     </header>
-    <main>
+<main>
+<div data-bs-spy="scroll" data-bs-target="#header">
 <section id="sobre">
-<div>
-    <img src="./Imagens/arte jogo.png" alt="coração humano sendo segurado por uma mão esquelética">
-    <article>
-        <h2>Sobre</h2>
-        <p>Flahpocalipse é um sistema de RPG  de Survival Horror voltado para Oneshots (campanhas de apenas uma sessão) e para iniciantes. 
-            Nele você criará um sobrevivente de um apocalipse zumbi, enfrentará infectados com as mais diversas habilidades e criará armas improvisadas com os recursos que encontrar. Quem você será em Flahpocalipse?</p>
-    </article>
-</div>
-</section>
-<section id="contato">
-    <div>
-
-        <h2>Fale conosco!</h2>
-        <form>
-            <label for="text">Nome</label>
-            <input id="text" type="text"placeholder="Insira seu nome" required/>
-            <br/>
-            <label for="email">E-mail</label>
-            <input id="email" type="email"placeholder="Insira seu email" required/>
-            <br/>
-            <label for="tel">Telefone</label>
-            <input id="tel" type="tel"placeholder="Insira seu telefone (opcional)"/>
-            <br/>
-            <label for="mensagem">Mensagem</label>
-            <textarea  id="mensagem" placeholder ="Deixe sua mensagem"required></textarea>
-            <br/>
-            <button type="submit"> Enviar</button>
-        </form>
-    </div>
-    <div>
-        <h2>
-            Saiba mais sobre Flashpocalipse nas redes sociais!
-        </h2>
-        <nav>
-            <ul>
-                <li><a href="#"><img src="./Imagens/tiktok.png" alt="tik tok"></a></li>
-                <li><a href="#"><img src="./Imagens/instagram.png" alt=" instagram"></a></li>
-                <li><a href="#"><img src="./Imagens/youtube.png" alt="youtube"></a></li>
-            </ul>
+    <h2 class="section-title text-center"> Sobre</h2>
+    <div class="container">
+        <nav class="nav nav-tabs">
+            <button  data-bs-toggle="tab" data-bs-target="#jogo" class="nav-link active">O jogo</button>
+            <button data-bs-toggle="tab"data-bs-target="#sobreviventes" class="nav-link">Sobreviventes</button>
+            <button data-bs-toggle="tab"data-bs-target="#infectados" class="nav-link">Infectados</button>
+            <button data-bs-toggle="tab"data-bs-target="#equipamento" class="nav-link">Equipamento</button>
         </nav>
+    </div>
+    <div class="tab-content">
+        <div class="tab-pane active" id="jogo">
+          <div class="container pt-5 pb-5">    
+              <div class="row">
+                <div class="col-md-7">
+                    <h3 class="pt-350">O Jogo</h3>
+                    <p>Flahpocalipse é um sistema de RPG  de Survival Horror voltado para Oneshots (campanhas de apenas uma sessão) e para iniciantes. 
+                        Nele você criará um sobrevivente de um apocalipse zumbi, enfrentará infectados com as mais diversas habilidades e criará armas improvisadas com os recursos que encontrar. Quem você será em Flahpocalipse? </p>
+                </div>
+                <div class="col-md-5">
+                   <img src="./Imagens/arte jogo.png"class="d-block w-50 rounded" alt="">
+                </div>
+          </div>
+            </div>
+        </div>
+        <div class="tab-pane" id="sobreviventes">
+          
+        </div>
+        <div class="tab-pane" id="infectados">
+        </div>
+        <div class="tab-pane" id="equipamento"> 
+        </div>
+        
+        </div>
 
-</div>
 </section>
-    </main>
-    <footer>
-        <p>&copy; Todos direitos reservados 2024</p>
-    </footer>
+<section class="section-title text-center" id="wiki">
+    <h2>Wiki</h2>
+</section>
+<section class="section-title text-center" id="equipe">
+    <h2>Equipe</h2>
+</section>
+<section class="section-title text-center" id="contato">
+<h2>Contato</h2>
+</section>
+</div>
+
+</main>
+    <script src="./lib/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+
+
+
+
+
