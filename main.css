@@ -4,7 +4,7 @@ body
     background-color: #461616;
     font-family: "DM Sans", sans-serif;
 }
-h1,h2,h3, .nav-link
+h1,h2,h3, .nav-link, .navbar-brand
 {
     font-family: "Sansita", sans-serif;
     font-size: 1.5em;
@@ -37,12 +37,20 @@ nav .nav-link:hover
 }
 section
 { 
-    height: 100vh;
+    height: 120vh;
     margin: 20px 0;
-    padding-top: 120px;
+    padding-top: 40px;
+}
+#wiki
+{
+height: 160vh;
 }
 .nav .nav-link.active
 {
     background-color: #461616;
     color: #fff;
+}
+p{
+    font-family: "DM Sans", sans-serif;
+    font-size: 1em;
 }

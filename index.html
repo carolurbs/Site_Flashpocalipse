@@ -31,7 +31,35 @@
         </div>
     </header>
 <main>
-<div data-bs-spy="scroll" data-bs-target="#header">
+    <div class="carousel slide carousel-fade" data-bs-ride="carousel" id="carousel-header">
+        <div class="carousel-inner">
+            <div data-bs-interval="1500" class="carousel-item active">
+                <img src="./Imagens/slides-interprete.webp" class="d-block w-100" alt="Interprete">
+            </div>
+            <div data-bs-interval="1500" class="carousel-item">
+                <img src="./Imagens/slides-crie.webp" class="d-block w-100" alt="Crie">
+            </div>
+            <div data-bs-interval="1500" class="carousel-item">
+                <img src="./Imagens/slides-sobreviva.webp" class="d-block w-100" alt="Sobreviva">
+            </div>
+            <div data-bs-interval="1500" class="carousel-item">
+                <img src="./Imagens/slide-flash.webp" class="d-block w-100" alt="Flahpocalipse">
+            </div>
+        </div>
+        <button data-bs-target="#carousel-header" data-bs-slide="prev" class="carousel-control-prev" type="button">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button data-bs-target="#carousel-header" data-bs-slide="next" class="carousel-control-next" type="button">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carousel-header" class="active" data-bs-slide-to="0"></button>
+            <button type="button" data-bs-target="#carousel-header" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#carousel-header" data-bs-slide-to="2"></button>
+            <button type="button" data-bs-target="#carousel-header" data-bs-slide-to="3"></button>
+        </div>
+    </div>
+<div data-bs-spy="scroll" data-bs-ride="#header">
 <section id="sobre">
     <h2 class="section-title text-center"> Sobre</h2>
     <div class="container">
@@ -52,24 +80,274 @@
                         Nele você criará um sobrevivente de um apocalipse zumbi, enfrentará infectados com as mais diversas habilidades e criará armas improvisadas com os recursos que encontrar. Quem você será em Flahpocalipse? </p>
                 </div>
                 <div class="col-md-5">
-                   <img src="./Imagens/arte jogo.png"class="d-block w-50 rounded" alt="">
+                   <img src="./Imagens/Arte jogo.webp"class="d-block w-50 rounded" alt="Mão esquelética segurando um coração humano">
                 </div>
           </div>
             </div>
         </div>
         <div class="tab-pane" id="sobreviventes">
-          
+            <div class="container pt-5 pb-5">
+                <div class="row">
+                    <div class="col-md-5">
+                        <img src="./Imagens/Survivor.webp" class="d-block w-50 rounded" alt="Fogueira acesa">
+                    </div>
+                    <div class="col-md-7">
+                        <h3 class="pt-350"> Sobreviventes</h3>
+                        <p>Em Flashpocalipse todo sobrevivente tem seu papel. Seu aprendizado em vida será essencial para sua sobrevivência. Talvez você seja um cientista em busca de respostas ou então alguém que sempre teve que lutar para sobreviver. Até mesmo um artista buscando aliviar corações aflitos. Não importa, venha e chegue mais perto da fogueira. Queremos conhecer sua história. </p>
+                    </div>
+                </div>
+            </div>
+
         </div>
         <div class="tab-pane" id="infectados">
+            <div class="container pt-5 pb-5">
+                <div class="row">
+                    <div class="col-md-7">
+                        <h3 class="pt-350">Infectados</h3>
+                        <p>Em Flashpocalipse há diversos tipos de infectados. Desde caminhantes solitários até bestas que parecem agir como uma colmeia de abelhas. Você será capaz de enfrentá-los? </p>
+                    </div>
+                    <div class="col-md-5">
+                        <img src="./Imagens/Infectado.webp"class="d-block w-50 rounded" alt="Caveira rachada">
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="tab-pane" id="equipamento"> 
+            <div class="container pt-5 pb-5">
+                <div class="row">
+                    <div class="col-md-5">
+                        <img src="./Imagens/Equipamento.webp" class="d-block w-50 rounded" alt="Machado de madeira">
+                    </div>
+                    <div class="col-md-7">
+                        <h3 class="pt-350"> Equipamento</h3>
+                        <p>Há uma vasta variedade de equipamentos que podem de ajudar a sobreviver em Flashpocalipse. Você pode até mesmo fabricar alguns deles! Claro, se tiver o material necessário e conhecer a receita para tal!</p>
+                    </div>
+                </div>
+            </div>
         </div>
         
         </div>
 
 </section>
-<section class="section-title text-center" id="wiki">
-    <h2>Wiki</h2>
+<section  id="wiki">
+    <h2 class="section-title text-center">Wiki</h2>
+    <div class="container">
+        <nav class="nav nav-tabs">
+            <button  data-bs-toggle="tab" data-bs-target="#char" class="nav-link active">Criação de personagem</button>
+            <button data-bs-toggle="tab"data-bs-target="#equip" class="nav-link">Equipamento</button>
+            <button data-bs-toggle="tab"data-bs-target="#system" class="nav-link">Sistema</button>
+            <button data-bs-toggle="tab"data-bs-target="#zombie" class="nav-link">Infectados</button>
+        </nav>
+    </div>
+    <div class="tab-content">
+        <div class="tab-pane active" id="char">
+          <div class="container pt-5 pb-5">    
+              <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="https://via.placeholder.com/100x100" alt="">
+                        </div>
+                        <div class="card-header">
+                            <a href="#">Antecedentes</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4"> 
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="https://via.placeholder.com/100x100" alt="">
+                        </div>
+                        <div class="card-header">
+                            <a href="#">Habilidades</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="https://via.placeholder.com/100x100" alt="">
+                        </div>
+                        <div class="card-header">
+                            <a href="#">Vantagens</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="https://via.placeholder.com/100x100" alt="">
+                        </div>
+                        <div class="card-header">
+                            <a href="#">Arquétipos</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="https://via.placeholder.com/100x100" alt="">
+                        </div>
+                        <div class="card-header">
+                            <a href="#">Defeitos Fatais</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="https://via.placeholder.com/100x100" alt="">
+                        </div>
+                        <div class="card-header">
+                            <a href="#">Equipamento Inicial</a>
+                        </div>
+                    </div>
+                </div>
+          </div>
+            </div>
+        </div>
+        <div class="tab-pane" id="equip">
+            <div class="container pt-5 pb-5">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <img src="https://via.placeholder.com/100x100" alt="">
+                            </div>
+                            <div class="card-header">
+                                <a href="#">Armas</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <img src="https://via.placeholder.com/100x100" alt="">
+                            </div>
+                            <div class="card-header">
+                                <a href="#">Armaduras</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <img src="https://via.placeholder.com/100x100" alt="">
+                            </div>
+                            <div class="card-header">
+                                <a href="#">Outros Equipamentos</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="tab-pane" id="system">
+            <div class="container pt-5 pb-5">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <img src="https://via.placeholder.com/100x100" alt="">
+                            </div>
+                            <div class="card-header">
+                                <a href="#">Combate</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <img src="https://via.placeholder.com/100x100" alt="">
+                            </div>
+                            <div class="card-header">
+                                <a href="#">Cura</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <img src="https://via.placeholder.com/100x100" alt="">
+                            </div>
+                            <div class="card-header">
+                                <a href="#">Criação de Itens</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <img src="https://via.placeholder.com/100x100" alt="">
+                            </div>
+                            <div class="card-header">
+                                <a href="#">Pesquisa</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <img src="https://via.placeholder.com/100x100" alt="">
+                            </div>
+                            <div class="card-header">
+                                <a href="#">Investigação</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <img src="https://via.placeholder.com/100x100" alt="">
+                            </div>
+                            <div class="card-header">
+                                <a href="#">Social</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane" id="zombie"> 
+            <div class="container pt-5 pb-5">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <img src="https://via.placeholder.com/100x100" alt="">
+                            </div>
+                            <div class="card-header">
+                                <a href="#">Origem da Infecção</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <img src="https://via.placeholder.com/100x100" alt="">
+                            </div>
+                            <div class="card-header">
+                                <a href="#">Infectando-se</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <img src="https://via.placeholder.com/100x100" alt="">
+                            </div>
+                            <div class="card-header">
+                                <a href="#">Criando Infectados</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        </div>
 </section>
 <section class="section-title text-center" id="equipe">
     <h2>Equipe</h2>
@@ -83,7 +361,6 @@
     <script src="./lib/bootstrap.bundle.min.js"></script>
 </body>
 </html>
-
 
 
 
