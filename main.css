@@ -54,3 +54,20 @@ p{
     font-family: "DM Sans", sans-serif;
     font-size: 1em;
 }
+#wiki .card
+{
+    background-color: #2d2d2d;
+    color: #fff;
+    width: 150px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+#wiki .card-header a
+{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 800;
+    font-family: "DM Sans", sans-serif;
+    font-size: 0.9em;
+
+}
