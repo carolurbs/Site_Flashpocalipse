@@ -47,12 +47,15 @@ section,footer
 {
     background-color: #2d2d2d;
 }
+.carousel-container
+{
+    padding: 25px;
+}
 section
 { 
     margin: 20px 0;
     padding-top: 40px;
 }
-
 
 .nav .nav-link.active
 {
@@ -72,13 +75,9 @@ p{
     width: 150px;
     text-align: center;
     margin: 10px;
-    padding: 2px;
+    padding: 10px;
 }
-#equipe .container 
-{
-    border-top: 2px solid white;
-    padding: 20px;
-}
+
 #equipe .card
 {
     border:2px solid #6b6b6b;
@@ -103,7 +102,7 @@ p{
 }
 #wiki  a
 {
-    font-size: 0.85em;
+    font-size: 80%;
 }
 
 #wiki a :hover, #equipe a :hover
@@ -115,7 +114,11 @@ p{
  {
     font-size: 1em;
  }
-
+#contato h2, #equipe h2
+{
+    border-bottom: 2px solid #fff;
+    padding-bottom:20px;
+}
 footer
 {
     justify-content: space-between;
@@ -127,4 +130,76 @@ footer p
     padding: 10px;
     font-weight: 800;
 
+}
+form 
+{
+width: 50%;
+padding: 5%;
+font-family: "DM Sans", sans-serif;
+font-size: 1em;
+font-weight: 800;
+}
+
+.form-control::placeholder
+{
+    color: #fff;
+}
+
+.form-control
+{
+    margin-bottom: 10px;
+}
+.form-control,.form-control:focus{
+    background-color: transparent;
+    color: #fff;
+}
+
+#mensagem
+{
+    height: 150px;
+}
+
+form button
+{
+    background-color: transparent;
+    color: #fff;
+    font-weight: 800;
+    border: 2px solid #fff;
+    border-radius: 15px 15px 40px;
+    padding: 5px 20px 5px 10px;
+    margin-top: 10px;
+}
+form button:hover
+{
+    background-color: #fff;
+    color: #272626;
+}
+
+
+@media screen and  (min-width: 768px) { 
+    .social_media
+    {
+        margin: 150px;
+    }
+    
+}
+    
+@media screen and  (max-width: 767px) {
+
+    #sobre img,.card-link
+    {
+        display: flex;
+        justify-content: center; 
+    }
+    #sobre img
+    {
+        margin-left: 150px;
+    }
+    form{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin-left: 150px;
+      }
+        
 }

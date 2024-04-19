@@ -31,34 +31,36 @@
         </div>
     </header>
 <main>
-    <div class="carousel slide carousel-fade" data-bs-ride="carousel" id="carousel-header">
-        <div class="carousel-inner">
-            <div data-bs-interval="1500" class="carousel-item active">
-                <img src="./Imagens/slides-interprete.webp" class="d-block w-100" alt="Interprete">
+    <section class="carousel-container">
+        <div class="carousel slide carousel-fade" data-bs-ride="carousel" id="carousel-header">
+            <div class="carousel-inner">
+                <div data-bs-interval="1500" class="carousel-item active">
+                    <img src="./Imagens/slides-interprete.webp" class="d-block w-100" alt="Interprete">
+                </div>
+                <div data-bs-interval="1500" class="carousel-item">
+                    <img src="./Imagens/slides-crie.webp" class="d-block w-100" alt="Crie">
+                </div>
+                <div data-bs-interval="1500" class="carousel-item">
+                    <img src="./Imagens/slides-sobreviva.webp" class="d-block w-100" alt="Sobreviva">
+                </div>
+                <div data-bs-interval="1500" class="carousel-item">
+                    <img src="./Imagens/slide-flash.webp" class="d-block w-100" alt="Flahpocalipse">
+                </div>
             </div>
-            <div data-bs-interval="1500" class="carousel-item">
-                <img src="./Imagens/slides-crie.webp" class="d-block w-100" alt="Crie">
-            </div>
-            <div data-bs-interval="1500" class="carousel-item">
-                <img src="./Imagens/slides-sobreviva.webp" class="d-block w-100" alt="Sobreviva">
-            </div>
-            <div data-bs-interval="1500" class="carousel-item">
-                <img src="./Imagens/slide-flash.webp" class="d-block w-100" alt="Flahpocalipse">
+            <button data-bs-target="#carousel-header" data-bs-slide="prev" class="carousel-control-prev" type="button">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button data-bs-target="#carousel-header" data-bs-slide="next" class="carousel-control-next" type="button">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carousel-header" class="active" data-bs-slide-to="0"></button>
+                <button type="button" data-bs-target="#carousel-header" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#carousel-header" data-bs-slide-to="2"></button>
+                <button type="button" data-bs-target="#carousel-header" data-bs-slide-to="3"></button>
             </div>
         </div>
-        <button data-bs-target="#carousel-header" data-bs-slide="prev" class="carousel-control-prev" type="button">
-            <span class="carousel-control-prev-icon"></span>
-        </button>
-        <button data-bs-target="#carousel-header" data-bs-slide="next" class="carousel-control-next" type="button">
-            <span class="carousel-control-next-icon"></span>
-        </button>
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carousel-header" class="active" data-bs-slide-to="0"></button>
-            <button type="button" data-bs-target="#carousel-header" data-bs-slide-to="1"></button>
-            <button type="button" data-bs-target="#carousel-header" data-bs-slide-to="2"></button>
-            <button type="button" data-bs-target="#carousel-header" data-bs-slide-to="3"></button>
-        </div>
-    </div>
+    </section>
 <div data-bs-spy="scroll" data-bs-ride="#header">
 <section id="sobre">
     <h2 class="section-title text-center"> Sobre</h2>
@@ -143,8 +145,8 @@
         <div class="tab-pane active" id="char">
           <div class="container pt-5 pb-5">    
               <div class="row">
-                <div class="col-md-4">
-                    <a href="#">
+                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
+                    <a class="card-link" href="#">
                         <div class="card">
                             <div class="card-body">
                                 <img src="./Imagens/card-antecedentes.webp" class="d-block w-100" alt="Cientista">
@@ -155,8 +157,8 @@
                         </div>
                     </a>
                 </div>
-                <div class="col-md-4"> 
-                    <a href="#">
+                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12"> 
+                    <a class="card-link" href="#">
                         <div class="card">
                             <div class="card-body">
                                 <img src="./Imagens/card-habilidades.webp" class="d-block w-100" alt="Lupa">
@@ -167,8 +169,8 @@
                         </div>
                     </a>
                 </div>
-                <div class="col-md-4">
-                    <a href="#">     
+                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
+                    <a class="card-link" href="#">     
                         <div class="card">
                             <div class="card-body">
                                 <img src="./Imagens/card-vantagens.webp" class="d-block w-100" alt="Cavalo">
@@ -179,8 +181,8 @@
                         </div>
                     </a>
                 </div>
-                <div class="col-md-4">
-                    <a href="#">
+                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
+                    <a class="card-link" href="#">
                         <div class="card">
                             <div class="card-body">
                                 <img src="./Imagens/card-arquétipos.webp" class="d-block w-100" alt="Cérebro">
@@ -191,8 +193,8 @@
                         </div>
                     </a>    
                 </div>
-                <div class="col-md-4">
-                    <a href="#">
+                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
+                    <a class="card-link" href="#">
                         <div class="card">
                             <div class="card-body">
                                 <img src="./Imagens/card-defeito-fatal.webp" class="d-block w-100" alt="Lápide">
@@ -203,8 +205,8 @@
                         </div>
                     </a>
                 </div>
-                <div class="col-md-4">
-                    <a href="#">
+                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
+                    <a class="card-link" href="#">
                         <div class="card">
                             <div class="card-body">
                                 <img src="./Imagens/card_equipamento_ini.webp" class="d-block w-100" alt="Mochila">
@@ -221,8 +223,8 @@
         <div class="tab-pane" id="equip">
             <div class="container pt-5 pb-5">
                 <div class="row">
-                    <div class="col-md-4">
-                        <a href="#">
+                    <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
+                        <a class="card-link" href="#">
                             <div class="card">
                                 <div class="card-body">
                                     <img src="./Imagens/card-armas.webp" class="d-block w-100" alt="Coquetel Molotov">
@@ -233,8 +235,8 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col-md-4">
-                        <a href="#">
+                    <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
+                        <a class="card-link" href="#">
                             <div class="card">
                                 <div class="card-body">
                                     <img src="./Imagens/card-armaduras.webp" class="d-block w-100" alt=Kevlar">
@@ -245,9 +247,8 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col-md-4">
-                        <a href="#"> 
-
+                    <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
+                        <a class="card-link" href="#"> 
                             <div class="card">
                                 <div class="card-body">
                                     <img src="./Imagens/Cards-Outros-Equipamento.webp" class="d-block w-100" alt=Tenda">
@@ -265,8 +266,8 @@
         <div class="tab-pane" id="system">
             <div class="container pt-5 pb-5">
                 <div class="row">
-                    <div class="col-md-4">
-                        <a href="#">
+                    <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
+                        <a class="card-link" href="#">
                             <div class="card">
                                 <div class="card-body">
                                     <img src="./Imagens/card-combate.webp" class="d-block w-100" alt="Arco e Flecha">
@@ -277,8 +278,8 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col-md-4">
-                        <a href="#">
+                    <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
+                        <a class="card-link" href="#">
                             <div class="card">
                                 <div class="card-body">
                                     <img src="./Imagens/card-cura.webp" class="d-block w-100" alt="Coração humano">
@@ -289,8 +290,8 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col-md-4">
-                        <a href="#">
+                    <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
+                        <a class="card-link" href="#">
                             <div class="card">
                                 <div class="card-body">
                                     <img src="./Imagens/card-criação-itens.webp" class="d-block w-100" alt="Martelo">
@@ -301,8 +302,8 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col-md-4">
-                        <a href="#">
+                    <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
+                        <a class="card-link" href="#">
                             <div class="card">
                                 <div class="card-body">
                                     <img src="./Imagens/card-pesquisa.webp" class="d-block w-100" alt="Livro">
@@ -313,8 +314,8 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col-md-4">
-                        <a href="#">
+                    <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
+                        <a class="card-link" href="#">
                             <div class="card">
                                 <div class="card-body">
                                     <img src="./Imagens/card-inv.webp" class="d-block w-100" alt="Pegada com lupa">
@@ -325,8 +326,8 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col-md-4">
-                        <a href="#">
+                    <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
+                        <a class="card-link" href="#">
                             <div class="card">
                                 <div class="card-body">
                                     <img src="./Imagens/card-social.webp" class="d-block w-100" alt="Pessoa falando">
@@ -344,8 +345,8 @@
         <div class="tab-pane" id="zombie"> 
             <div class="container pt-5 pb-5">
                 <div class="row">
-                    <div class="col-md-4">
-                        <a href="#">
+                    <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
+                        <a class="card-link" href="#">
                             <div class="card">
                                 <div class="card-body">
                                     <img src="./Imagens/card-origem.webp" class="d-block w-100" alt="Micróbio">
@@ -356,8 +357,8 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col-md-4">
-                        <a href="#">
+                    <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
+                        <a class="card-link" href="#">
                             <div class="card">
                                 <div class="card-body">
                                     <img src="./Imagens/card-infectando-se.webp" class="d-block w-100" alt="Termômetro">
@@ -368,8 +369,8 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col-md-4">
-                        <a href="#">
+                    <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
+                        <a class="card-link" href="#">
                             <div class="card">
                                 <div class="card-body">
                                     <img src="./Imagens/card-especies.webp" class="d-block w-100" alt="DNA">
@@ -390,8 +391,8 @@
     <h2 class="section-title text-center">Equipe</h2>
     <div class="container pt-5 pb-5">
         <div class="row">
-            <div class="col-md-5">
-                <a href="https://dreamfyre.wixsite.com/website">
+            <div class="col-xl-5 col-lg-6 col-md-6">
+                <a class="card-link" href="https://dreamfyre.wixsite.com/website">
                     <div class="card">
                         <div class="card-body">
                             <img src="./Imagens/dreamfyre.jfif" class="d-block w-100 " alt="Logo da Dreamfyre Studios, uma fênix pegando fogo">
@@ -404,8 +405,8 @@
                 </a>
 
             </div>
-            <div class="col-md-5">
-                <a href="https://www.lojadasb.com.br">
+            <div class="col-xl-5 col-lg-6 col-md-6">
+                <a class="card-link" href="https://www.lojadasb.com.br">
                     <div class="card">
                         <div class="card-body">
                             <img src="./Imagens/sb.PNG" class="d-block w-100" alt="Logo da South Bird Jogos, uma gralha azul">
@@ -424,14 +425,38 @@
 </section>
 <section class="section-title text-center" id="contato">
 <h2>Contato</h2>
+<div class="d-sm-block d-md-flex">
+    <form>
+    <label class="form-label" for="name">Nome</label>
+    <input class="form-control" type="text" id="nome" placeholder="Seu nome" required>
+    <label class="form-label" for="email">E-mail</label>
+    <input class="form-control" type="email" id="email" placeholder="exemplo@exemplo.com" required>
+    <label class="form-label" for="telephone">Whatsapp</label>
+    <input class="form-control" type="tel" id="telephone" placeholder="(DDD)00000-0000">
+    <label class="form-label" for="mensagem">Sua Mensagem</label>
+    <input class="form-control"id="mensagem" placeholder="Digite sua mensagem aqui">
+    <button type="submit">Enviar</button>
+    </form>
+    <div class="d-block social_media">
+        <h3>Visite nossas redes sociais</h3>
+        <ul class="d-flex justify-content-center nav nav-pills">
+            <li class="nav-itens"><a class="nav-link" href="https://www.youtube.com/watch?v=swiwV9fn-Ew&t=8s"><i class="bi bi-youtube"></i> </a></li>
+            <li class="nav-itens"><a class="nav-link" href="https://twitter.com/flashpocalipse"><i class="bi bi-twitter-x"></i></a></li>
+            <li class="nav-itens"><a class="nav-link" href="https://discord.com/invite/r8cA7NCfVY"><i class="bi bi-discord"></i></a></li>
+        </ul>
+    </div>
+</div>
 </section>
 </div>
 </main>
-<footer class="d-md-flex">
+<footer class="d-md-flex d-sm-block">
    <p> &copy; Todos direitos reservados 2024 - Dreamfyre Studios & South Bird</p>  
     <p>Site feito com Bootstrap</p>
 </footer>
     <script src="./lib/bootstrap.bundle.min.js"></script>
+    <script src="./lib/jquery-3.7.1.min.js"></script>
+    <script src="./lib/jquery.mask.min.js"></script>
+    <script src="./main.js"></script>
     
 </body>
 </html>
