@@ -4,7 +4,7 @@ body
     background-color: #461616;
     font-family: "DM Sans", sans-serif;
 }
-h1,h2,h3, .nav-link, .navbar-brand
+h1,h2,h3,h4,h5, .nav-link, .navbar-brand
 {
     font-family: "Sansita", sans-serif;
     font-size: 1.5em;
@@ -12,7 +12,15 @@ h1,h2,h3, .nav-link, .navbar-brand
     font-style: italic;
     margin: 10px;
 }
-
+h4
+{
+    font-size: 1.2em;
+}
+h5
+{
+    font-size: 1em;
+    font-weight: 600;
+}
 .nav .nav-link,
 .navbar-brand, 
 .navbar-brand:hover
@@ -30,7 +38,7 @@ nav .nav-link:hover
     background-color: #7d7979;
 }
 
-.navbar, section
+.navbar, section, footer
 {
     
     background-color: #2d2d2d;
@@ -45,6 +53,10 @@ section
 {
 height: 160vh;
 }
+#equipe
+{
+    height: 120vh;
+}
 .nav .nav-link.active
 {
     background-color: #461616;
@@ -56,18 +68,76 @@ p{
 }
 #wiki .card
 {
-    background-color: #2d2d2d;
+    border:2px solid #6b6b6b;
+    background-color: transparent;
+    border-radius: 15%;
     color: #fff;
     width: 150px;
     text-align: center;
-    margin-bottom: 10px;
+    margin: 10px;
+    padding: 2px;
 }
-#wiki .card-header a
+#equipe .container 
+{
+    border-top: 2px solid white;
+    padding: 20px;
+}
+#equipe .card
+{
+    border:2px solid #6b6b6b;
+    background-color: transparent;
+    border-radius: 15%;
+    color: #fff;
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+}
+#equipe .card-body img
+{
+    border-radius: 15%;
+}
+#wiki  a
 {
     text-decoration: none;
     color: #fff;
     font-weight: 800;
     font-family: "DM Sans", sans-serif;
-    font-size: 0.9em;
+    font-size: 0.85em;
+
+}
+#wiki a :hover
+{
+    background-color: #565555;
+    border: none;
+    border-radius: 15%;
+}
+
+ #equipe .card a
+ {
+    background-color: #2d2d2d;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1em;
+    padding: 5px 10px;
+    font-weight: 800;
+    border: 2px solid #fff;
+    border-radius:15px 15px 40px 15px;
+ }
+ #equipe .card a:hover
+ {
+    border: none;
+    color: #2d2d2d;
+    background-color: #fff;
+ }
+footer
+{
+    justify-content: space-between;
+    text-align: center;
+}
+footer p 
+{
+    font-size: 1em;
+    padding: 10px;
+    font-weight: 800;
 
 }
