@@ -41,7 +41,7 @@ nav .nav-link:hover
 .navbar
 {
     background-color: #272626;
-    border-bottom: 2px solid white;
+    border-bottom: 1px solid #6d6b6b;
 }
 section,footer
 {
