@@ -38,25 +38,22 @@ nav .nav-link:hover
     background-color: #7d7979;
 }
 
-.navbar, section, footer
+.navbar
 {
-    
+    background-color: #272626;
+    border-bottom: 2px solid white;
+}
+section,footer
+{
     background-color: #2d2d2d;
 }
 section
 { 
-    height: 120vh;
     margin: 20px 0;
     padding-top: 40px;
 }
-#wiki
-{
-height: 160vh;
-}
-#equipe
-{
-    height: 120vh;
-}
+
+
 .nav .nav-link.active
 {
     background-color: #461616;
@@ -88,47 +85,37 @@ p{
     background-color: transparent;
     border-radius: 15%;
     color: #fff;
-    text-align: center;
     margin: 10px;
-    padding: 10px;
+    padding: 25px;
 }
 #equipe .card-body img
 {
     border-radius: 15%;
 }
-#wiki  a
+#wiki  a, #equipe a
 {
     text-decoration: none;
     color: #fff;
     font-weight: 800;
     font-family: "DM Sans", sans-serif;
-    font-size: 0.85em;
+    
 
 }
-#wiki a :hover
+#wiki  a
+{
+    font-size: 0.85em;
+}
+
+#wiki a :hover, #equipe a :hover
 {
     background-color: #565555;
     border: none;
-    border-radius: 15%;
 }
-
  #equipe .card a
  {
-    background-color: #2d2d2d;
-    color: #fff;
-    text-decoration: none;
     font-size: 1em;
-    padding: 5px 10px;
-    font-weight: 800;
-    border: 2px solid #fff;
-    border-radius:15px 15px 40px 15px;
  }
- #equipe .card a:hover
- {
-    border: none;
-    color: #2d2d2d;
-    background-color: #fff;
- }
+
 footer
 {
     justify-content: space-between;
