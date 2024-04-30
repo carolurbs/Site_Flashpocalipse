@@ -133,8 +133,8 @@ footer p
 }
 form 
 {
-width: 50%;
 padding: 5%;
+width: 50%;
 font-family: "DM Sans", sans-serif;
 font-size: 1em;
 font-weight: 800;
@@ -175,7 +175,16 @@ form button:hover
     color: #272626;
 }
 
+.tab-content
+{
+    display: flex;
+    justify-content:center;
+}
+#equipe .container{
+    display: flex;
+    justify-content: center;
 
+}
 @media screen and  (min-width: 768px) { 
     .social_media
     {
@@ -199,7 +208,7 @@ form button:hover
         display: flex;
         justify-content: center;
         flex-direction: column;
-        margin-left: 150px;
+        margin-left: 200px;
       }
         
 }
