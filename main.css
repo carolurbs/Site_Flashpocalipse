@@ -29,6 +29,12 @@ h5
     text-align: center;
     margin-top: 10px;
 }
+.navbar-brand img
+{
+    width: 80px;
+    height:auto;
+    margin-right: 15px;
+}
 .navbar-toggler
 {
     background-color:#757373
@@ -66,17 +72,6 @@ p{
     font-family: "DM Sans", sans-serif;
     font-size: 1em;
 }
-#wiki .card
-{
-    border:2px solid #6b6b6b;
-    background-color: transparent;
-    border-radius: 15%;
-    color: #fff;
-    width: 150px;
-    text-align: center;
-    margin: 10px;
-    padding: 10px;
-}
 
 #equipe .card
 {
@@ -91,24 +86,12 @@ p{
 {
     border-radius: 15%;
 }
-#wiki  a, #equipe a
+ #equipe a
 {
     text-decoration: none;
     color: #fff;
     font-weight: 800;
     font-family: "DM Sans", sans-serif;
-    
-
-}
-#wiki  a
-{
-    font-size: 75%;
-}
-
-#wiki a :hover, #equipe a :hover
-{
-    background-color: #565555;
-    border: none;
 }
  #equipe .card a
  {
